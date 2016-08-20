@@ -1,7 +1,7 @@
 ﻿define([
-    'text!views/layout/layout.html'
+    'views/layout/layout.html!text'
 ], function (layoutTemplate) {
-
+    debugger;
     var nav;
 
     // these links populate the navbar

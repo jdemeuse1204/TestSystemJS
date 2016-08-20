@@ -1,5 +1,4 @@
 ﻿@using System.Web.Optimization;
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,33 +11,44 @@
     <script src="@Url.Content("~/Scripts/system.js")" type="text/javascript"></script>
 </head>
 <body>
-
     @Html.AntiForgeryToken()
     <div id="applicationHost" class="page-wrap">
-
         <!-- The application is rendered here -->
-
     </div>
 
-    <script src="@Url.Content("~/Scripts/require.js")" data-main="@Url.Content("App/config")"></script>
+<script type="text/javascript" charset="utf-8">
 
-    <script type="text/javascript" charset="utf-8">
-        System.config({
-            baseURL: 'App',
+    window.define = System.amdDefine;
+    window.require = System.amdRequire;
 
-            meta: {
+    System.config({
+        baseURL: 'App',
 
-            },
-            map: {
-                //'text': '../Scripts/text',
-                kendo: 'vendor/kendo/kendo',
-                app: 'app',
-                main: "main",
-                jquery: "../../../Scripts/kendo/2016.2.714/jquery.min"
+        map: {
+            text: '../Scripts/text.js',
+            app: 'app.js',
+            main: "main.js",
+            jquery: "../../../Scripts/kendo/2016.2.714/jquery.min"
+        },
+
+        paths: {
+            'kendo.*': "../../../Scripts/kendo/2016.2.714/kendo.*.js"
+        },
+        meta: {
+            // meaning [baseURL]/vendor/angular.js when no other rules are present
+            // path is normalized using map and paths configuration
+            '/Scripts/kendo/2016.2.714/kendo.*.js': {
+                format: 'global', // load this module as a global
+                exports: 'kendo', // the global property to take as the module value
+                deps: [
+                    // dependencies to load before this module
+                    'jquery'
+                ]
             }
-        })
+        }
+    });
 
-        System.import('./main.js');
-    </script>
+    System.import('main');
+</script>
 </body>
 </html>
