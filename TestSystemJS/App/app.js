@@ -1,9 +1,10 @@
 ﻿define([
+    'kendo',
     'views/layout/layout.js',
     'views/home/home.js',
     'views/details/details.js'
-], function (layout, home, details) {
-    debugger;
+], function (kendo, layout, home, details) {
+
     // the application router4
     var router = new kendo.Router({
         init: function () {

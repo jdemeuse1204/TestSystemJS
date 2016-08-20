@@ -1,7 +1,7 @@
 ﻿define([
     'views/home/home.html!text'
 ], function (homeTemplate) {
-    debugger;
+
     var viewModel = kendo.observable({
         title: "Home"
     })

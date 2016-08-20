@@ -1,8 +1,7 @@
 ﻿define([
-    '../Scripts/kendo/2016.2.714/kendo.router.min',
-    '../Scripts/kendo/2016.2.714/kendo.view.min',
-    '../Scripts/kendo/2016.2.714/kendo.fx.min'
+    '../../../Scripts/kendo/2016.2.714/kendo.router.min.js',
+    '../../../Scripts/kendo/2016.2.714/kendo.view.min.js',
+    '../../../Scripts/kendo/2016.2.714/kendo.fx.min.js'
 ], function () {
-    debugger;
     return kendo;
 })

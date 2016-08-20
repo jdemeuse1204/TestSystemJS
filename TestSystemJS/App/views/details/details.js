@@ -1,7 +1,7 @@
 ﻿define([
     'views/details/details.html!text'
 ], function (detailsTemplate) {
-    debugger;
+
     var viewModel = kendo.observable({
         title: 'Details'
     });
