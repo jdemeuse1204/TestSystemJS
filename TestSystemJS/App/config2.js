@@ -35,44 +35,21 @@
         DataTables: { deps: ["jquery"], exports: "$.fn.DataTable" }
     };
 
-    // packages tells the System loader how to load when no filename and/or no extension
-    //var packages = {
-    //    'app': { main: 'main.js', defaultExtension: 'js' },
-    //    'rxjs': { defaultExtension: 'js' },
-    //    'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
-    //};
 
-    //var ngPackageNames = [
-    //  'common',
-    //  'compiler',
-    //  'core',
-    //  'forms',
-    //  'http',
-    //  'platform-browser',
-    //  'platform-browser-dynamic',
-    //  'router',
-    //  'router-deprecated',
-    //  'upgrade',
-    //];
-
-    //// Individual files (~300 requests):
-    //function packIndex(pkgName) {
-    //    packages['@angular/' + pkgName] = { main: 'index.js', defaultExtension: 'js' };
-    //}
-
-    //// Bundled (~40 requests):
-    //function packUmd(pkgName) {
-    //    pac
-    //    kages['@angular/' + pkgName] = { main: 'bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
-    //}
-    //// Most environments should use UMD; some (Karma) need the individual index files
-    //var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
-
-    //// Add package entries for angular packages
-    //ngPackageNames.forEach(setPackageConfig);
+    // package name has no bearing on path used with
+    // when referencing the script
+    var packages = {
+        pages: {
+            main: 'views/*.html',
+            format: 'amd',
+            defaultExtension: 'html'
+        }
+    };
 
     var config = {
         baseURL: "App",
+        defaultJSExtensions: true,
+        packages: packages,
         map: map,
         paths: paths,
         meta: meta
