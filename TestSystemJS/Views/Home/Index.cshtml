@@ -13,10 +13,14 @@
 </head>
 <body>
     @Html.AntiForgeryToken()
-    <div id="applicationHost" class="page-wrap">
-        <!-- The application is rendered here -->
-    </div>
+<div id="applicationHost" class="page-wrap">
+    <!-- The application is rendered here -->
+</div>
 
-    <script src="@Url.Content("~/App/config.js")" type="text/javascript"></script>
+    <!-- This works, we are able to specify the entry point, see line 55 in the file-->
+    @*<script src="@Url.Content("~/App/config.js")" type="text/javascript"></script>*@
+
+    <!-- This does not work, I tried to specify the entry point after Site.js is referenced-->
+    <script src="@Url.Content("~/App/startup.js")" type="text/javascript"></script>
 </body>
 </html>

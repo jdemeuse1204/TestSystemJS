@@ -140,6 +140,8 @@
     <Content Include="App\app.js" />
     <Content Include="App\config.js" />
     <Content Include="App\main.js" />
+    <Content Include="App\Site.js" />
+    <Content Include="App\startup.js" />
     <Content Include="App\vendor\kendo\kendo.js" />
     <Content Include="App\views\details\details.html" />
     <Content Include="App\views\details\details.js" />
@@ -1216,6 +1218,7 @@
     <Content Include="Content\kendo\2016.2.714-source\mobile\android\all.less" />
     <Content Include="Content\kendo\2016.2.714-source\mobile\android\actionsheet.less" />
     <Content Include="Content\kendo\2016.2.714-source\common\transitions.less" />
+    <Content Include="App\build.config.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\aes.js" />
     <Content Include="Scripts\bootstrap.js" />

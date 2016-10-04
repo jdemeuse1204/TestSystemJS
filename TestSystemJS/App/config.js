@@ -11,17 +11,17 @@
         text: "../Scripts/text.js",
         app: "app.js",
         main: "main.js",
-        aes: "../../../Scripts/aes.js",
-        jquery: "../../../Scripts/kendo/" + kendoVersion + "/jquery.min.js",
+        aes: "../Scripts/aes.js",
+        jquery: "../Scripts/kendo/" + kendoVersion + "/jquery.min.js",
         kendo: "vendor/kendo/kendo.js",
-        DataTables: "../../../Scripts/datatables.js",
-        k: "../../../Scripts/kendo/" + kendoVersion + "/"
+        DataTables: "../Scripts/datatables.js",
+        k: "../Scripts/kendo/" + kendoVersion + "/"
     };
 
     var paths = {
-        'kendo.*': "../../../Scripts/kendo/" + kendoVersion + "/kendo.*.js",
-        jquery: "../../../Scripts/kendo/" + kendoVersion + "/jquery.min.js",
-        bootstrap: "../../../Scripts/bootstrap.js"
+        'kendo.*': "../Scripts/kendo/" + kendoVersion + "/kendo.*.js",
+        jquery: "../Scripts/kendo/" + kendoVersion + "/jquery.min.js",
+        bootstrap: "../Scripts/bootstrap.js"
     };
 
     var meta = {

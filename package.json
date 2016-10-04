@@ -1,0 +1,19 @@
+{
+  "name": "testsystemjs",
+  "version": "1.0.0",
+  "description": "Testing Grounds",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdemeuse1204/TestSystemJS.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdemeuse1204/TestSystemJS/issues"
+  },
+  "homepage": "https://github.com/jdemeuse1204/TestSystemJS#readme"
+}
