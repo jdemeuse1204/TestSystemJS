@@ -139,8 +139,6 @@
   <ItemGroup>
     <Content Include="App\app.js" />
     <Content Include="App\config.js" />
-    <Content Include="App\config2.js" />
-    <Content Include="App\main-built.js" />
     <Content Include="App\main.js" />
     <Content Include="App\vendor\kendo\kendo.js" />
     <Content Include="App\views\details\details.html" />

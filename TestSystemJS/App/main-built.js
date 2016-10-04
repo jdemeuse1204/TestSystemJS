@@ -1,1 +1,0 @@
-﻿// There's nothing here!  Build your project with the RequireJS Optimizer http://blogs.telerik.com/kendoui/posts/13-05-08/requirejs-fundamentals
