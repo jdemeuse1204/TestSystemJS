@@ -9,12 +9,12 @@
         }
     },
     map: {
-      text: "./TestSystemJS/Scripts/text.js",
-        app: "app.js",
-        main: "main.js",
+        text: "./TestSystemJS/Scripts/text.js",
+        app: "./TestSystemJS/App/app.js",
+        main: "./TestSystemJS/App/main.js",
         aes: "./TestSystemJS/Scripts/aes.js",
         jquery: "./TestSystemJS/Scripts/kendo/2016.2.714/jquery.min.js",
-        kendo: "vendor/kendo/kendo.js",
+        kendo: "./TestSystemJS/App/vendor/kendo/kendo.js",
         DataTables: "./TestSystemJS/Scripts/datatables.js",
         k: "./TestSystemJS/Scripts/kendo/2016.2.714"
     },
@@ -28,6 +28,7 @@
         main: { deps: ["jquery"] },
         jquery: { exports:"$", format: "global" },
         kendo: { deps: ["jquery"] },
-        DataTables: { deps: ["jquery"], exports: "$.fn.DataTable" }
+        DataTables: { deps: ["jquery"], exports: "$.fn.DataTable" },
+        'App/*.js': { format: "amd" }
     }
 });

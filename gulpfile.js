@@ -7,9 +7,11 @@ var Builder = require('systemjs-builder');
 gulp.task('build:site', function () {
     var builder = new Builder('TestSystemJS/App', 'TestSystemJS/App/build.config.js');
 
-    return builder.buildStatic('app.js', 'TestSystemJS/App/Site.js', {
+    return builder.buildStatic('main.js', 'TestSystemJS/App/Site.js', {
         format: "amd",
-        minify: false
+        minify: false,
+        sourceMaps: false,
+        runtime: false
     });
 });
 

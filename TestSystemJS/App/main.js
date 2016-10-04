@@ -1,4 +1,4 @@
-﻿define("main", [
+﻿define([
     "app"
 ], function (app) {
     app.start();
