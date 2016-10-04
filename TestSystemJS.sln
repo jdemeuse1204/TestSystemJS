@@ -6,10 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSystemJS", "TestSystemJS\TestSystemJS.csproj", "{4B4DF63D-2F81-44CB-80C2-E0FD565F018C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B644EE8C-48A0-40B6-B3F9-8B23B096B915}"
-	ProjectSection(SolutionItems) = preProject
-		gulpfile.js = gulpfile.js
-		package.json = package.json
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

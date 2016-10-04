@@ -137,18 +137,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App\app.js" />
-    <Content Include="App\config.js" />
+    <Content Include="App\js\bundle.js" />
     <Content Include="App\main.js" />
-    <Content Include="App\Site.js" />
-    <Content Include="App\startup.js" />
-    <Content Include="App\vendor\kendo\kendo.js" />
-    <Content Include="App\views\details\details.html" />
-    <Content Include="App\views\details\details.js" />
-    <Content Include="App\views\home\home.html" />
-    <Content Include="App\views\home\home.js" />
-    <Content Include="App\views\layout\layout.html" />
-    <Content Include="App\views\layout\layout.js" />
+    <Content Include="App\router.js" />
+    <Content Include="App\vendor.js" />
+    <Content Include="webpack.config.js" />
+    <Content Include="App\views\details.html" />
+    <Content Include="App\viewmodels\details.js" />
+    <Content Include="App\views\home.html" />
+    <Content Include="App\viewmodels\home.js" />
+    <Content Include="App\views\layout.html" />
+    <Content Include="App\viewmodels\layout.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -1218,7 +1217,7 @@
     <Content Include="Content\kendo\2016.2.714-source\mobile\android\all.less" />
     <Content Include="Content\kendo\2016.2.714-source\mobile\android\actionsheet.less" />
     <Content Include="Content\kendo\2016.2.714-source\common\transitions.less" />
-    <Content Include="App\build.config.js" />
+    <Content Include="package.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\aes.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -1790,8 +1789,6 @@
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Scripts\system.js" />
-    <Content Include="Scripts\text.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

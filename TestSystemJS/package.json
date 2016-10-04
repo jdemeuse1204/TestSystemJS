@@ -1,0 +1,30 @@
+{
+  "name": "testsystemjs",
+  "version": "1.0.0",
+  "description": "Testing Grounds",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdemeuse1204/TestSystemJS.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdemeuse1204/TestSystemJS/issues"
+  },
+  "homepage": "https://github.com/jdemeuse1204/TestSystemJS#readme",
+  "devDependencies": {
+    "webpack": "^1.13.2",
+    "css-loader": "^0.13.1",
+    "file-loader": "^0.8.4",
+    "style-loader": "^0.12.2",
+    "url-loader": "^0.5.6",
+    "webpack-notifier": "^1.2.1"
+  },
+  "dependencies": {
+    "imports-loader": "^0.6.5"
+  }
+}

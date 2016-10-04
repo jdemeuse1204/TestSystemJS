@@ -1,5 +1,4 @@
-﻿define("main", [
-    "app"
-], function (app) {
-    app.start();
-});
+﻿require('../App/vendor');
+var router = require('../App/router');
+
+router.start();

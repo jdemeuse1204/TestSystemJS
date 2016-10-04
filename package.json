@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jdemeuse1204/TestSystemJS/issues"
   },
-  "homepage": "https://github.com/jdemeuse1204/TestSystemJS#readme"
+  "homepage": "https://github.com/jdemeuse1204/TestSystemJS#readme",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
 }
